@@ -4,3 +4,8 @@ complaint_text,priority
 "Website login page is very slow",Low
 "Received wrong product, need urgent replacement",High
 "Customer support is not responding",Medium
+"I am unable to access my Gmail account",High
+"Met with John Doe yesterday regarding service issues",Medium
+"Order from Amazon has not been delivered",High
+"Flight to New York got cancelled without any notification",High
+"Warranty for my iPhone is still pending after two months",Low

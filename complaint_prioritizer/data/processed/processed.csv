@@ -4,3 +4,8 @@ Billing error in my last invoice,Medium,billing error in my last invoice,"['bill
 Website login page is very slow,Low,website login page is very slow,"['website', 'login', 'page', 'slow']",[]
 "Received wrong product, need urgent replacement",High,received wrong product need urgent replacement,"['receive', 'wrong', 'product', 'need', 'urgent', 'replacement']",[]
 Customer support is not responding,Medium,customer support is not responding,"['customer', 'support', 'respond']",[]
+I am unable to access my Gmail account,High,i am unable to access my gmail account,"['unable', 'access', 'gmail', 'account']",[]
+Met with John Doe yesterday regarding service issues,Medium,met with john doe yesterday regarding service issues,"['meet', 'john', 'doe', 'yesterday', 'regard', 'service', 'issue']",[]
+Order from Amazon has not been delivered,High,order from amazon has not been delivered,"['order', 'amazon', 'deliver']",[]
+Flight to New York got cancelled without any notification,High,flight to new york got cancelled without any notification,"['flight', 'new', 'york', 'get', 'cancel', 'without', 'notification']",[]
+Warranty for my iPhone is still pending after two months,Low,warranty for my iphone is still pending after two months,"['warranty', 'iphone', 'still', 'pending', 'two', 'month']",[]
