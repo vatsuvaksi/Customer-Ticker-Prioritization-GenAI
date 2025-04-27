@@ -1,6 +1,0 @@
-complaint_text,priority,clean_text,tokens
-My internet is not working for two days,High,my internet is not working for two days,"['my', 'internet', 'is', 'not', 'working', 'for', 'two', 'days']"
-Billing error in my last invoice,Medium,billing error in my last invoice,"['billing', 'error', 'in', 'my', 'last', 'invoice']"
-Website login page is very slow,Low,website login page is very slow,"['website', 'login', 'page', 'is', 'very', 'slow']"
-"Received wrong product, need urgent replacement",High,received wrong product need urgent replacement,"['received', 'wrong', 'product', 'need', 'urgent', 'replacement']"
-Customer support is not responding,Medium,customer support is not responding,"['customer', 'support', 'is', 'not', 'responding']"

@@ -1,9 +1,10 @@
 import os
 import pandas as pd
 from src.preprocessing.cleaner import clean_text
-from src.preprocessing.tokenizer import tokenize_text
+# from src.preprocessing.tokenizer import tokenize_text
 from src.preprocessing.vectorizer import vectorize_corpus
 from src.config.config import RAW_DATA_PATH, PROCESSED_DATA_PATH
+from src.preprocessing.tokenizer import TextPreprocessor
 
 # Load data
 # Clean it
@@ -27,12 +28,19 @@ def run_pipeline():
     data['clean_text'] = data['complaint_text'].apply(clean_text)
 
     # Step 3: Tokenization
-    print("Tokenizing text...")
-    data['tokens'] = data['clean_text'].apply(tokenize_text)
+    print("Tokenizing text using Lemma and stop words ...")
+    textPreProcessor = TextPreprocessor()
+    # cleanText , ner = textPreProcessor.preprocess(data['clean_text'])
+    data['clean_text_lemma'], data['ner'] = zip(*data['clean_text'].apply(textPreProcessor.preprocess))
+
+
+    #Step 4: Extracting entitites for future filtering 
+    # data['entities'] = ner
 
     # Step 4: Vectorization (TF-IDF)
     print("Vectorizing text...")
-    X_features, vectorizer = vectorize_corpus(data['clean_text'])
+    X_features, vectorizer = vectorize_corpus(data['clean_text_lemma'].apply(lambda x: ' '.join(x)))
+    print("tf-id vector " , vectorizer)
 
     # Step 5: Save processed data
     print(f"Saving processed data to {PROCESSED_DATA_PATH}...")
@@ -40,7 +48,7 @@ def run_pipeline():
     data.to_csv(PROCESSED_DATA_PATH, index=False)
 
     print("Pipeline completed successfully!")
-    print(X_features)
+
     return X_features, data
 
     

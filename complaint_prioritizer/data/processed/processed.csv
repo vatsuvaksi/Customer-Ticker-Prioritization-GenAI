@@ -1,0 +1,6 @@
+complaint_text,priority,clean_text,clean_text_lemma,ner
+My internet is not working for two days,High,my internet is not working for two days,"['internet', 'work', 'two', 'day']",[]
+Billing error in my last invoice,Medium,billing error in my last invoice,"['bill', 'error', 'last', 'invoice']",[]
+Website login page is very slow,Low,website login page is very slow,"['website', 'login', 'page', 'slow']",[]
+"Received wrong product, need urgent replacement",High,received wrong product need urgent replacement,"['receive', 'wrong', 'product', 'need', 'urgent', 'replacement']",[]
+Customer support is not responding,Medium,customer support is not responding,"['customer', 'support', 'respond']",[]

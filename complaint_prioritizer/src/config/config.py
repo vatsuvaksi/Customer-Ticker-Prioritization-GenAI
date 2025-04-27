@@ -1,2 +1,2 @@
 RAW_DATA_PATH="C:/Users/ACER/Desktop/Projects/personal_projects/Ticket-Priotization/complaint_prioritizer/data/raw/small-complaints.csv"
-PROCESSED_DATA_PATH="complaint_prioritizer/data/processed/processed.csv"
+PROCESSED_DATA_PATH="C:/Users/ACER/Desktop/Projects/personal_projects/Ticket-Priotization/complaint_prioritizer/data/processed/processed.csv"
